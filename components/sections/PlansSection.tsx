@@ -62,7 +62,7 @@ export default function PlansSection() {
             >
               {/* Badge */}
               {plan.badge && (
-                <div className="absolute right-6 top-6 rounded-full bg-[var(--brand-primary)] px-3 py-1 text-xs font-semibold text-slate-900">
+                <div className="absolute right-6 top-6 rounded-full bg-[var(--brand-primary)] px-3 py-1 text-xs font-semibold">
                   {plan.badge}
                 </div>
               )}
@@ -114,7 +114,7 @@ export default function PlansSection() {
               </div>
 
               {/* CTA */}
-              <button className="mt-10 w-full rounded-xl bg-[var(--brand-primary)] px-5 py-3 font-semibold text-slate-900 transition hover:opacity-90">
+              <button className="mt-10 w-full rounded-xl bg-[var(--brand-primary)] px-5 py-3 font-semibold  transition hover:opacity-90">
                 Schedule a Demo
               </button>
             </div>

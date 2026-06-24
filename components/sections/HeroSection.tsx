@@ -184,7 +184,7 @@ export default function HeroSection() {
 
         {/* Buttons */}
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-          <button className="rounded-lg bg-[var(--brand-primary)] px-6 py-3 font-semibold text-slate-900 transition hover:scale-105 hover:bg-[var(--brand-primary)]">
+          <button className="rounded-lg bg-[var(--brand-primary)] px-6 py-3 font-semibold transition hover:scale-105 hover:bg-[var(--brand-primary)]">
             Book a Demo
           </button>
 

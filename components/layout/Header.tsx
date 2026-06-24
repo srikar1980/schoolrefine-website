@@ -102,7 +102,7 @@ export default function Header() {
     aria-label="Download School ERP brochure (PDF)"
     className="inline-flex items-center justify-center gap-2 h-10 px-4 text-sm font-semibold
                rounded-lg border border-slate-300 bg-white
-               text-slate-700 transition
+                transition
                hover:bg-slate-50 hover:text-slate-900"
   >
     <svg
@@ -127,7 +127,7 @@ export default function Header() {
 
   {/* Primary CTA */}
   <button
-    className="h-10 px-5 rounded-lg bg-[var(--brand-primary)] text-sm font-semibold text-slate-900
+    className="h-10 px-5 rounded-lg bg-[var(--brand-primary)] text-sm font-semibold text-white
                transition hover:scale-105 hover:bg-[var(--brand-primary)]"
   >
     Book a Demo
@@ -208,7 +208,7 @@ export default function Header() {
       ))}
 
       {/* CTA */}
-      <button className="mt-4 rounded-2xl bg-[var(--brand-primary)] px-5 py-4 font-semibold text-slate-900 transition hover:bg-[var(--brand-primary)]">
+      <button className="mt-4 rounded-2xl bg-[var(--brand-primary)] px-5 py-4 font-semibold transition hover:bg-[var(--brand-primary)]">
         Book a Demo
       </button>
     </div>
