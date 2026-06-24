@@ -39,7 +39,7 @@ export default function FeaturesSection() {
       id="features"
       className="relative overflow-hidden bg-slate-950 py-28 text-white"
     >
-      
+
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute left-0 top-1/4 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl" />
 
@@ -151,9 +151,9 @@ export default function FeaturesSection() {
       alt="Automated Report Cards"
       className="rounded-xl"
     />
-    <p className="mt-3 text-sm font-medium text-white">
+    {/* <p className="mt-3 text-sm font-medium text-white">
       Automated Report Cards
-    </p>
+    </p> */}
   </div>
 </div>
         </div>
