@@ -33,22 +33,7 @@ export default function Footer() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-14">
         <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:justify-between">
-          {/* Brand */}
-          {/* <div className="max-w-md">
-            <h2 className="text-3xl font-bold tracking-tight">
-              <span className="bg-gradient-to-r text-[#f2610d] text-[#f2610d] bg-clip-text text-transparent">
-                School
-              </span>
-              Refine
-            </h2>
 
-            <p className="mt-5 text-sm leading-relaxed text-slate-400 sm:text-base">
-              A modern School ERP & Management Platform designed to simplify
-              academic operations, administration, attendance, exams, report
-              cards, accounts, and school workflows through one connected
-              digital system.
-            </p>
-          </div> */}
           <div className="max-w-md">
 
   <h2 className="flex items-baseline gap-2 text-2xl sm:text-3xl font-bold tracking-tight select-none">
@@ -107,9 +92,15 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-14 border-t border-white/10 pt-6 text-center text-sm text-slate-600">
-          © 2026 SchoolRefine. All rights reserved.
-        </div>
+        <div className="relative mt-14">
+  <div className="h-px w-full bg-gradient-to-r from-transparent via-[var(--brand-primary)]/50 to-transparent" />
+
+  <div className="absolute left-1/2 top-0 h-px w-32 -translate-x-1/2 bg-[var(--brand-primary)] blur-sm" />
+</div>
+
+<div className="pt-6 text-center text-sm text-slate-600">
+  © 2026 SchoolRefine. All rights reserved.
+</div>
       </div>
     </footer>
   );

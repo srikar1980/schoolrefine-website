@@ -5,8 +5,6 @@ export default function StatsSection() {
     "ABC School",
     "Oxford Public School",
     "Green Valley School",
-    "Sri Chaitanya",
-    "Narayana School",
     "Future Kids Academy",
   ];
 

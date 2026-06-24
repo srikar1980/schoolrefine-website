@@ -2,22 +2,27 @@ export default function PlansSection() {
   const plans = [
     {
       duration: "1 Year Plan",
-      price: "₹25,000",
+      price: "₹12,000",
+      yearly: "₹12,000/year",
       description:
-        "Complete access to all ERP modules including student management, exams, attendance, report cards, accounts, and administration tools.",
+        "Complete access to all SchoolRefine ERP modules with onboarding, updates, and technical support for schools with up to 500 students.",
+    },
+    {
+      duration: "2 Year Plan",
+      price: "₹20,000",
+      yearly: "₹10,000/year",
+      savings: "Save ₹4,000",
+      description:
+        "Reduced annual cost with uninterrupted access, priority support, regular updates, and long-term operational continuity.",
     },
     {
       duration: "3 Year Plan",
-      price: "₹60,000",
+      price: "₹28,000",
+      yearly: "₹9,333/year",
+      savings: "Save ₹8,000",
       badge: "Most Popular",
       description:
-        "Best value for schools looking for long-term digital transformation with reduced yearly pricing and continuous support.",
-    },
-    {
-      duration: "5 Year Plan",
-      price: "₹90,000",
-      description:
-        "Ideal for institutions seeking long-term stability, operational continuity, and maximum pricing advantage.",
+        "Best value for schools planning long-term digital transformation with the lowest annual cost and continuous platform improvements.",
     },
   ];
 
@@ -38,9 +43,9 @@ export default function PlansSection() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-slate-300 sm:text-lg">
-            All plans include full access to every module with no hidden feature
-            restrictions. Schools receive better pricing benefits for long-term
-            partnerships.
+            Transparent pricing for schools with up to 500 students. Every
+            plan includes full access to all SchoolRefine ERP modules with no
+            hidden feature restrictions.
           </p>
         </div>
 
@@ -50,7 +55,9 @@ export default function PlansSection() {
             <div
               key={plan.duration}
               className={`relative rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition hover:-translate-y-1 hover:bg-white/[0.06] ${
-                plan.badge ? "ring-1 ring-yellow-300/40" : ""
+                plan.badge
+                  ? "ring-2 ring-[var(--brand-primary)] scale-[1.02]"
+                  : ""
               }`}
             >
               {/* Badge */}
@@ -66,16 +73,27 @@ export default function PlansSection() {
               {/* Price */}
               <div className="mt-6">
                 <span className="text-5xl font-bold">{plan.price}</span>
-
                 <span className="ml-2 text-slate-400">total</span>
               </div>
+
+              {/* Yearly Cost */}
+              <p className="mt-2 text-sm text-slate-400">
+                {plan.yearly}
+              </p>
+
+              {/* Savings */}
+              {plan.savings && (
+                <p className="mt-2 text-sm font-medium text-green-400">
+                  {plan.savings}
+                </p>
+              )}
 
               {/* Description */}
               <p className="mt-6 text-sm leading-relaxed text-slate-300">
                 {plan.description}
               </p>
 
-              {/* Included */}
+              {/* Included Features */}
               <div className="mt-8 space-y-3">
                 {[
                   "Student Management",
@@ -83,20 +101,20 @@ export default function PlansSection() {
                   "Report Cards",
                   "Accounts & Fees",
                   "Technical Support",
+                  "Software Updates & Maintenance",
                 ].map((feature) => (
                   <div
                     key={feature}
                     className="flex items-center gap-3 text-sm text-slate-300"
                   >
                     <div className="h-2 w-2 rounded-full bg-[var(--brand-primary)]" />
-
                     <span>{feature}</span>
                   </div>
                 ))}
               </div>
 
               {/* CTA */}
-              <button className="mt-10 w-full rounded-xl bg-[var(--brand-primary)] px-5 py-3 font-semibold text-slate-900 transition hover:bg-[var(--brand-primary)]">
+              <button className="mt-10 w-full rounded-xl bg-[var(--brand-primary)] px-5 py-3 font-semibold text-slate-900 transition hover:opacity-90">
                 Schedule a Demo
               </button>
             </div>
@@ -105,8 +123,9 @@ export default function PlansSection() {
 
         {/* Bottom Note */}
         <p className="mx-auto mt-10 max-w-2xl text-center text-sm leading-relaxed text-slate-400">
-          Pricing may vary depending on student strength, deployment scope,
-          onboarding requirements, and customization needs.
+          Pricing shown is applicable for schools with up to 500 students.
+          Larger institutions, custom deployments, data migration, or advanced
+          integrations may require a customized quotation.
         </p>
       </div>
     </section>
